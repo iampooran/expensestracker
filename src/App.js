@@ -1,8 +1,22 @@
+import Expenses from "./components/Expenses/Expenses";
+
 function App() {
+  const expenses = [
+    {
+      title: "Personal Expenses",
+      amount: 100,
+      date: new Date(2022, 6, 21),
+    },
+    {
+      title: "Car Expenses",
+      amount: 200,
+      date: new Date(2022, 4, 15),
+    },
+  ];
   return (
-    <div>
-      <h2>Let's get started!</h2>
-    </div>
+    <>
+      <Expenses items={expenses} />
+    </>
   );
 }
 
